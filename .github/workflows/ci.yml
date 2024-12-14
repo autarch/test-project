@@ -29,4 +29,8 @@ jobs:
           target: ${{ matrix.platform.target }}
           toolchain: ${{ matrix.toolchain }}
           args: "--locked"
+          rust-cache-parameters: |
+            {
+                "cache-all-crates": true
+            }
           strip: false
